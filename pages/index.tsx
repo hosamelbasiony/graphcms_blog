@@ -2,7 +2,7 @@ import type { NextPage, GetStaticProps } from 'next'
 import { PostCard, Categories, PostWidget } from '../Components'
 import { getPosts } from '../services'
 
-const Home =({ posts }) => {
+const Home =({ posts }: { posts:any[] }) => {
   
   console.log(posts);
 
@@ -17,7 +17,7 @@ const Home =({ posts }) => {
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
-            <PostWidget />
+            <PostWidget slug={null} categories={[]} />
             <Categories />
           </div>
         </div>
