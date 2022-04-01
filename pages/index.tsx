@@ -1,5 +1,6 @@
 import type { NextPage, GetStaticProps } from 'next'
 import { PostCard, Categories, PostWidget } from '../components'
+import { FeaturedPosts } from '../sections/index';
 import { getPosts } from '../services'
 
 const Home =({ posts }: { posts:any[] }) => {
@@ -8,7 +9,7 @@ const Home =({ posts }: { posts:any[] }) => {
 
   return (
     <div className="container mx-auto px-4 lg:px-10 mb-8">
-      {/* <FeaturedPosts /> */}
+      <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post, index) => (
