@@ -42,7 +42,7 @@ function PostCard({ post }) {
       <div className="text-center">
         <Link href={`/post/${post.node?.slug}`} key={post.node?.slug}>
           <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
-            Continue Reading
+            اقرأ المزيد
           </span>
         </Link>
       </div>
